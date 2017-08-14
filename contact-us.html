@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="script.min.js"></script>
+</head>
+<body>
+<div class="content-background"></div>
+	<header>
+		<nav id="wrapper">
+			<div id="nav">
+				<div class="top_nav container clearfix">
+					<div class="nav_left float_left">
+						<div class="nav_logo">
+							<img src="logo.png" alt="" class="float_left">
+							<div class="float-right">
+								<h1>Sistem Informasi Penerbitan Issuer Identification Number (SIPIN)</h1>
+								<h2>Badan Standarisasi Nasional</h2>
+								<h2>National Standardization Agency of Indonesia</h2>
+							</div>
+						</div>
+					</div>
+					<div class="nav_right float_right" style="margin-top: 10px">
+						<ul class="user_nav clearfix">
+							<li><div id="btn_register" onclick="unfade('popup_box')" action="btnPopUp" data-id="register_frame">DAFTAR</div></li>
+							<li><div href="" id="btn_login" action="btnPopUp" data-id="login_frame">MASUK</div></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bot_nav clearfix">
+					<img src="logo.png" alt="" class="stickyNavShow float_left" height="30px" style="margin: 7px; display: none" >
+					<ul class="page_nav float_left clearfix">
+						<li><a href="index.html">Halaman Depan</a></li>
+						<li class="nav_parent"><a href="">Layanan IIN</a>
+							<ul>
+								<li><a href="iin-new.html"> Daftar Penerbitan IIN baru </a></li>
+								<li><a href="iin-publish-lama.html"> Daftar Pengawasan IIN Lama </a></li>
+							</ul>
+							</li>
+						<li class="nav_parent"><a href="">Informasi IIN</a>
+							<ul>
+								<li><a href="iin-publish.html">Daftar penerima IIN</a></li>
+								<li><a href="#"> File ISO 7812</a></li>
+								<li><a href="#"> Hasil Survey</a></li>
+							</ul>
+						</li>
+						<li><a href="contact-us.html">Hubungi Kami</a></li>
+					</ul>
+					<ul class="user_nav float_right stickyNavShow" style="margin-top: 13px; margin-right: 10px; display: none">
+						<li><div id="btn_register" action="btnPopUp" data-id="register_frame">DAFTAR</div></li>
+						<li><div id="btn_login" action="btnPopUp"   data-id="login_frame">MASUK</div></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<div class="page" style="margin-top: 150px">
+		<div class="clearfix">
+			
+
+			<!-- Section 1 -->
+			<section section-id="0" class="section_iin float_right" style="width: 70%;">
+				<h1 class="title_iin">Hubungi Kami</h1>
+				<p>Silakan mengisi form di bawah ini untuk melakukan mengirim pesan dan kesan.</p>
+				<article style="margin: 50px">
+					<div class="inputBox2 imp">
+							<label>Nama </label>
+							<input id="input1" type="text" placeholder="Nama Anda"/>
+						</div>
+					<div class="inputBox2 imp">
+						<label>Email</label>
+						<input id="input2" type="text" placeholder="Email"/>
+					</div>
+					<div class="inputBox2 imp">
+						<label>Pesan</label>
+						<!-- <input id="input1" type="text" placeholder="Pesan"/> -->
+						<br/>
+						<textarea name="" style="border:none; width: 100%" class="text_contact"></textarea>
+					</div>
+					
+
+					<div class="inputValidation2">
+						
+						<br/> <br/><br/><br/>
+						<div class="clearfix">
+							
+							<button class="float_right" style="background: #00a8cf">Kirim</button>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<!-- Section 2 -->
+			<section section-id="1" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Hasil Verifikasi Status Permohonan</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<ul class="section_iin_download">
+					<li>Informasi Persyaratan Pendaftaran Sponsoring Authority (kode: F.PKS.8.0.2)			<a href="" class="btn_download">Download</a></li>
+				</ul>
+
+				<p>Silakan unduh (download) beberapa dokumen berikut dan diunggah (upload) kembali setelah dilengkapi.</p>
+
+				<ul class="section_iin_download">
+					<li>1. Term & Condition (kode: F.PKS.8.0.3)												<a href="" class="btn_download">Download</a></li>
+					<li>2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<a href="" class="btn_download">Download</a></li>
+				</ul>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="btn_back float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 3 -->
+			<section section-id="2" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<ul class="section_iin_download">
+					<li><input type="checkbox"/> 1. Term & Condition (kode: F.PKS.8.0.3)											<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 1. Term & Condition (kode: F.PKS.8.0.3)											<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 1. Term & Condition (kode: F.PKS.8.0.3)											<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 1. Term & Condition (kode: F.PKS.8.0.3)											<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 1. Term & Condition (kode: F.PKS.8.0.3)											<button class="btn_upload">Upload</button></li>
+					<li><input type="checkbox"/> 2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<button class="btn_upload">Upload</button></li>
+				</ul>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button id="btn_back" style="background: red" class=" btn_back float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 4 -->
+			<section section-id="3" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="btn_back float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 5 -->
+			<section section-id="4" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<p>Silakan unduh (download) beberapa dokumen berikut dan diunggah (upload) kembali setelah dilengkapi.</p>
+
+				<ul class="section_iin_download">
+					<li>1. Term & Condition (kode: F.PKS.8.0.3)												<a href="" class="btn_download">Download</a></li>
+					<li>2. Form Aplikasi (Form Annex B) ISO IEC 7812-2_2015 (kode: DP.PKS.30)				<a href="" class="btn_download">Download</a></li>
+				</ul>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 6 -->
+			<section section-id="5" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<button>Unggah</button>
+				<div>Bukti Transfer PT. Codysseia</div>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 7 -->
+			<section section-id="6" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<table>
+					<thead>
+						<th>No</th>
+						<th>Nama</th>
+						<th>Posisi</th>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>Novalen Ramadan</td>
+						<td>Dicki Dharma Saputra</td>
+						<td>Akhmad Andaru</td>
+					</tr>
+					<tr>
+						<td>Lead Verificator</td>
+						<td>Member</td>
+						<td>Member</td>
+					</tr>
+				</table>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 8 -->
+			<section section-id="7" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<table>
+					<thead>
+						<th>No</th>
+						<th>Nama</th>
+						<th>Posisi</th>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>Novalen Ramadan</td>
+						<td>Dicki Dharma Saputra</td>
+						<td>Akhmad Andaru</td>
+					</tr>
+					<tr>
+						<td>Lead Verificator</td>
+						<td>Member</td>
+						<td>Member</td>
+					</tr>
+				</table>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 8 -->
+			<section section-id="8" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<table>
+					<thead>
+						<th>No</th>
+						<th>Nama</th>
+						<th>Posisi</th>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>Novalen Ramadan</td>
+						<td>Dicki Dharma Saputra</td>
+						<td>Akhmad Andaru</td>
+					</tr>
+					<tr>
+						<td>Lead Verificator</td>
+						<td>Member</td>
+						<td>Member</td>
+					</tr>
+				</table>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+			<!-- Section 8 -->
+			<section section-id="9" class="section_iin float_right" style="width: 70%; display:none">
+				<h1 class="title_iin">Pengajuan Surat Permohonan IIN Baru</h1>
+				<p>Status Permohonan IIN Baru Anda telah di Verifikasi dan telah disetujui. Berikut ini merupakan surat yang diterbitkan oleh Sekretariat Layanan terkait permohonan Anda. Silakan diunduh (download) sebagai bukti untuk bisa melanjutkan permohonan ke tahap selanjutnya.</p>
+
+				<table>
+					<thead>
+						<th>No</th>
+						<th>Nama</th>
+						<th>Posisi</th>
+					</thead>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>Novalen Ramadan</td>
+						<td>Dicki Dharma Saputra</td>
+						<td>Akhmad Andaru</td>
+					</tr>
+					<tr>
+						<td>Lead Verificator</td>
+						<td>Member</td>
+						<td>Member</td>
+					</tr>
+				</table>
+
+				<p >Setelah mengunduh dan melengkapi isi dari masing-masing dokumen, silakan klik button link di bawah ini untuk melanjutkan proses permohonan dengan melengkapi dokumen-dokumen yang dibutuhkan untuk diproses oleh Sekretariat Layanan.</p>
+					<br/>
+					<br/>
+
+				<div class="clearfix">
+					<button style="background: red" class="float_left">Kembali</button>	
+					<button style="background: #01923f" class="float_right">Lanjutkan Proses</button>	
+				</div>
+			</section>
+
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer_container clearfix">
+			<div class="footer_socmed">
+					<svg class="sprite_icon" fill="#cc181e"><use xlink:href="ic_socmed.svg#ic_yt"/></svg>
+					<svg class="sprite_icon" fill="#00aced"><use xlink:href="ic_socmed.svg#ic_tw"/></svg>
+					<svg class="sprite_icon" fill="#3b5998"><use xlink:href="ic_socmed.svg#ic_fb"/></svg>
+					<svg class="sprite_icon" fill="#bc2a8d"><use xlink:href="ic_socmed.svg#ic_ig"/></svg>
+			</div>
+
+			<div class="footer_contact_list clearfix">
+				<div class="float_left" style="width: 50%">
+					<svg class="sprite_icon float_left" fill="#555"><use xlink:href="ic_socmed.svg#ic_address"/></svg>
+					<div>Pusat Pendidikan dan Pemasyarakatan Standardisasi BSN<br/>
+						Gedung I BPPT Lt. 10
+						Jalan M.H. Thamrin No. 8 <br/>
+						Jakarta Pusat, 10340
+					</div>
+				</div>
+				<div class="float_right" style="width: 50%; border-left: 1px solid #ddd">
+					<svg class="sprite_icon float_left" fill="#555"><use xlink:href="ic_socmed.svg#ic_phone"/></svg>
+					<div>021 1234 1234 - 021 1234 1234</div>
+				</div>
+			</div>
+
+			<div class="footer_content_right">
+
+
+			</div>
+		</div>	
+	</footer>
+
+	<div id="popup_box" style="display: none">
+		<!-- LOG IN -->
+		<div id="login_frame" class="box_layout" style="display: none">
+			<div class="box_title">
+				<h1>Masuk</h1>
+				<div class="box_btn_close"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIxMi45ODIgMjEyLjk4MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjEyLjk4MiAyMTIuOTgyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnIGlkPSJDbG9zZSI+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7IiBkPSJNMTMxLjgwNCwxMDYuNDkxbDc1LjkzNi03NS45MzZjNi45OS02Ljk5LDYuOTktMTguMzIzLDAtMjUuMzEyICAgYy02Ljk5LTYuOTktMTguMzIyLTYuOTktMjUuMzEyLDBsLTc1LjkzNyw3NS45MzdMMzAuNTU0LDUuMjQyYy02Ljk5LTYuOTktMTguMzIyLTYuOTktMjUuMzEyLDBjLTYuOTg5LDYuOTktNi45ODksMTguMzIzLDAsMjUuMzEyICAgbDc1LjkzNyw3NS45MzZMNS4yNDIsMTgyLjQyN2MtNi45ODksNi45OS02Ljk4OSwxOC4zMjMsMCwyNS4zMTJjNi45OSw2Ljk5LDE4LjMyMiw2Ljk5LDI1LjMxMiwwbDc1LjkzNy03NS45MzdsNzUuOTM3LDc1LjkzNyAgIGM2Ljk4OSw2Ljk5LDE4LjMyMiw2Ljk5LDI1LjMxMiwwYzYuOTktNi45OSw2Ljk5LTE4LjMyMiwwLTI1LjMxMkwxMzEuODA0LDEwNi40OTF6IiBmaWxsPSIjYTFhMWExIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></div>
+			</div>
+			<div class="box_content">
+				<form action="">
+					<div class="panel_edit_input">
+						<label class="panel_label">Username/ Email:</label>
+						<input class="panel_input" type="text" id="username" autocomplete="off" style="width: 250px">
+						<label class="panel_alert">Namanya jangan rinaldysam ganteng!</label>
+					</div>
+					<div class="panel_edit_input">
+						<label class="panel_label">Kata Sandi:</label>
+						<input class="panel_input" type="text" id="password" autocomplete="off" style="width: 250px">
+					</div>
+					<div class="panel_edit_input panel_edit_button">
+						<label class="panel_label"></label>
+						<button class="panel_button_ok">Masuk</button>
+						<div class="panel_button_text" action="btnPopUp" data-id="forgot_frame"><i>Lupa Password?</i></div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- REGISTER -->
+		<div id="register_frame" class="box_layout" style="display: none">
+			<div class="box_title">
+				<h1>Daftar</h1>
+				<div class="box_btn_close">
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIxMi45ODIgMjEyLjk4MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjEyLjk4MiAyMTIuOTgyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnIGlkPSJDbG9zZSI+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7IiBkPSJNMTMxLjgwNCwxMDYuNDkxbDc1LjkzNi03NS45MzZjNi45OS02Ljk5LDYuOTktMTguMzIzLDAtMjUuMzEyICAgYy02Ljk5LTYuOTktMTguMzIyLTYuOTktMjUuMzEyLDBsLTc1LjkzNyw3NS45MzdMMzAuNTU0LDUuMjQyYy02Ljk5LTYuOTktMTguMzIyLTYuOTktMjUuMzEyLDBjLTYuOTg5LDYuOTktNi45ODksMTguMzIzLDAsMjUuMzEyICAgbDc1LjkzNyw3NS45MzZMNS4yNDIsMTgyLjQyN2MtNi45ODksNi45OS02Ljk4OSwxOC4zMjMsMCwyNS4zMTJjNi45OSw2Ljk5LDE4LjMyMiw2Ljk5LDI1LjMxMiwwbDc1LjkzNy03NS45MzdsNzUuOTM3LDc1LjkzNyAgIGM2Ljk4OSw2Ljk5LDE4LjMyMiw2Ljk5LDI1LjMxMiwwYzYuOTktNi45OSw2Ljk5LTE4LjMyMiwwLTI1LjMxMkwxMzEuODA0LDEwNi40OTF6IiBmaWxsPSIjYTFhMWExIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+				</div>
+			</div>
+			<div class="box_content">
+				<form action="">
+					<div class="panel_edit_input">
+						<label class="panel_label">Nama Lengkap:</label>
+						<input class="panel_input" type="text" id="username" autocomplete="off" style="width: 250px">
+						<label class="panel_alert">Namanya jangan rinaldysam ganteng!</label>
+					</div>
+					<div class="panel_edit_input">
+						<label class="panel_label">Username:</label>
+						<input class="panel_input" type="text" id="username" autocomplete="off" style="width: 250px">
+						<label class="panel_alert">Namanya jangan rinaldysam ganteng!</label>
+					</div>
+					<div class="panel_edit_input">
+						<label class="panel_label">E-mail:</label>
+						<input class="panel_input" type="text" id="username" autocomplete="off" style="width: 250px">
+						<label class="panel_alert">Namanya jangan rinaldysam ganteng!</label>
+					</div>
+					<div class="panel_edit_input">
+						<label class="panel_label">Kata Sandi:</label>
+						<input class="panel_input" type="password" id="password" autocomplete="off" style="width: 250px">
+					</div>
+					<div class="panel_edit_input">
+						<label class="panel_label">Ulang Kata Sandi:</label>
+						<input class="panel_input" type="password" id="password" autocomplete="off" style="width: 250px">
+					</div>
+					<div class="panel_edit_input">
+						<label class="panel_label"></label>
+						<input type="checkbox" id="register_check" name="registercheck" value="Confirm Registration">
+    					<label class="panel_label_checkbox" for="register_check">Saya setuju untuk mendaftar?</label>
+					</div>
+					<div class="panel_edit_input panel_edit_button">
+						<label class="panel_label"></label>
+						<button class="panel_button_ok"/>Daftar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- FORGOT PASSWORD -->
+		<div id="forgot_frame" class="box_layout" style="display: none">
+			<div class="box_title">
+				<h1>Lupa Kata Sandi</h1>
+				<div class="box_btn_close">
+					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIxMi45ODIgMjEyLjk4MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjEyLjk4MiAyMTIuOTgyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnIGlkPSJDbG9zZSI+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7IiBkPSJNMTMxLjgwNCwxMDYuNDkxbDc1LjkzNi03NS45MzZjNi45OS02Ljk5LDYuOTktMTguMzIzLDAtMjUuMzEyICAgYy02Ljk5LTYuOTktMTguMzIyLTYuOTktMjUuMzEyLDBsLTc1LjkzNyw3NS45MzdMMzAuNTU0LDUuMjQyYy02Ljk5LTYuOTktMTguMzIyLTYuOTktMjUuMzEyLDBjLTYuOTg5LDYuOTktNi45ODksMTguMzIzLDAsMjUuMzEyICAgbDc1LjkzNyw3NS45MzZMNS4yNDIsMTgyLjQyN2MtNi45ODksNi45OS02Ljk4OSwxOC4zMjMsMCwyNS4zMTJjNi45OSw2Ljk5LDE4LjMyMiw2Ljk5LDI1LjMxMiwwbDc1LjkzNy03NS45MzdsNzUuOTM3LDc1LjkzNyAgIGM2Ljk4OSw2Ljk5LDE4LjMyMiw2Ljk5LDI1LjMxMiwwYzYuOTktNi45OSw2Ljk5LTE4LjMyMiwwLTI1LjMxMkwxMzEuODA0LDEwNi40OTF6IiBmaWxsPSIjYTFhMWExIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+				</div>
+			</div>
+			<div class="box_content">
+				<div class="box_content_note">Silahkan masukan alamat E-mail anda dan kami akan mengirimkan alamat tautan untuk melakukan pengaturan untuk kata sandi anda.</div>
+				<form action="">
+					<div class="panel_edit_input">
+						<label class="panel_label">Alamat E-mail:</label>
+						<input class="panel_input" type="email" id="username" autocomplete="off" style="width: 250px">
+						<label class="panel_alert">Namanya jangan rinaldysam ganteng!</label>
+					</div>
+					<div class="panel_edit_input panel_edit_button">
+						<label class="panel_label"></label>
+						<button class="panel_button_ok">Lanjutkan</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
